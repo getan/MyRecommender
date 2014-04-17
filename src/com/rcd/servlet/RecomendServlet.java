@@ -18,6 +18,7 @@ import com.rcd.model.recommender.MySlopeOneRecommender;
 import com.rcd.model.recommender.MyUserBasedRecommender;
 
 public class RecomendServlet extends HttpServlet {
+
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		doPost(request, response);

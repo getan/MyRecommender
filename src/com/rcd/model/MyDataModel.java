@@ -12,7 +12,7 @@ public class MyDataModel {
 		try {
 			dataSource.setServerName("127.0.0.1");
 			dataSource.setUser("root");
-			dataSource.setPassword("HUHUI");
+			dataSource.setPassword("f");
 			dataSource.setDatabaseName("movie");
 			// use JNDI
 			dataModel = new MySQLJDBCDataModel(DataBaseUtil.getDataSource(),"movie_preferences","userID","movieID","preference", null);

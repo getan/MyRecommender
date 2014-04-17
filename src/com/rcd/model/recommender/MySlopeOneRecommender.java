@@ -16,7 +16,7 @@ public class MySlopeOneRecommender {
 	public List<RecommendedItem> mySlopeOneRecommender(long userID,int size){
 		List<RecommendedItem> recommendations = null;
 		try {
-			DataModel model = new FileDataModel(new File("/home/huhui/movie_preferences.txt"));//构造数据模型
+			DataModel model = new FileDataModel(new File("/home/getan/workspace/MyRecommender/movie_preferences.txt"));//构造数据模型
 			Recommender recommender = new CachingRecommender(new SlopeOneRecommender(model));//构造推荐引擎
 			recommendations = recommender.recommend(userID, size);//得到推荐结果
 		} catch (Exception e) {

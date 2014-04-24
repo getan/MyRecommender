@@ -2,6 +2,7 @@ package com.rcd.model;
 
 import org.apache.mahout.cf.taste.impl.model.jdbc.MySQLJDBCDataModel;
 import org.apache.mahout.cf.taste.model.JDBCDataModel;
+
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 public class MyDataModel {
@@ -15,9 +16,12 @@ public class MyDataModel {
 			dataSource.setPassword("f");
 			dataSource.setDatabaseName("movie");
 			// use JNDI
-			dataModel = new MySQLJDBCDataModel(DataBaseUtil.getDataSource(),"movie_preferences","userID","movieID","preference", null);
+			dataModel = new MySQLJDBCDataModel(DataBaseUtil.getDataSource(),
+					"movie_preferences", "userID", "movieID", "preference");
+			
 		} catch (Exception e) {
 			// TODO: handle exception
+			System.out.println(" database exception");
 			e.printStackTrace();
 		}
 		return dataModel;

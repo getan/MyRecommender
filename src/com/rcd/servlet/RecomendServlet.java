@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,8 +17,13 @@ import com.rcd.model.GetMovieInfo;
 import com.rcd.model.recommender.MyItemBasedRecommender;
 import com.rcd.model.recommender.MySlopeOneRecommender;
 import com.rcd.model.recommender.MyUserBasedRecommender;
-
+@WebServlet("/RecomendServlet")
 public class RecomendServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

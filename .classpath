@@ -17,6 +17,6 @@
 	<classpathentry kind="lib" path="/home/getan/programs/mahout-distribution-0.9/mahout-core-0.9-job.jar"/>
 	<classpathentry kind="lib" path="/home/getan/programs/mahout-distribution-0.9/mahout-integration-0.9.jar"/>
 	<classpathentry kind="lib" path="/home/getan/programs/mahout-distribution-0.9/mahout-math-0.9.jar"/>
-	<classpathentry kind="lib" path="/home/getan/programs/mahout-0.3/mahout-core-0.3.jar"/>
+	<classpathentry kind="src" output="work" path="work"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

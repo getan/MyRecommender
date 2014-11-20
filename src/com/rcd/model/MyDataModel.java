@@ -23,7 +23,7 @@ public class MyDataModel {
 			dataSource.setDatabaseName("movie");
 			// use JNDI
 			dataModel = new MySQLJDBCDataModel(DataBaseUtil.getDataSource(),
-					"movie_preferences", "userID", "movieID", "preference", null);
+					"movie_preferences", "userID", "movieID", "preference");
 			
 		} catch (Exception e) {
 			// TODO: handle exception
